@@ -1,0 +1,13 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Movie Page</title>
+</head>
+<body>
+    {% for x in model %}
+        <h3><a href="{{x.id}}">Name: {{x.name}}</a></h3>
+    {% endfor %}
+    
+</body>
+</html>
