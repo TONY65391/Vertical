@@ -1,4 +1,4 @@
-* {box-sizing: border-box; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-transform: capitalize;}
+* {box-sizing: border-box; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-transform: capitalize; margin: 0; padding: 0;}
 .head h4 {float: right; font-size: 20; margin: 4% 8px 0 8px; margin-top: 4%;}
 .head img {padding-top: 2%;}
 .head, .contents {width: 96%; margin: auto;}
@@ -13,7 +13,7 @@
 @media screen and (max-width:1400px) {
     .head h4 {display: none;} 
     #img-cont img {height: 350px; transition: 0.9s;}
-    #img-txt {font-size: 30; text-align: center;} 
+    #img-txt {font-size: 30; text-align: center; top: 90%; margin-top: 20px;} 
     #desc {font-size: 21; top: 40%;}  
     #rm {top: 70%;}
     #sub-desc {margin-top: 4%;}
@@ -39,13 +39,19 @@
     #img-txt {font-size: 53; text-align: center;}
     #desc {font-size: 23; top: 50%;}
     #rm {top: 75%;} 
-    .contents {height: 1750px;}
+    .contents {height: 2900px;}
+}
+
+@media screen and (min-width:1300px) {
+    body {background: blue;}
+    .final {margin-top: 30%;}
 }
 
 @media screen and (min-width: 900px) {
     #sec {width: 32%; float: left;}  
-    .contents {height: 1750px;}
+    .contents {height: 1550px;}
     .final div {width: 50%; float: left; border: 5ps solid black;}
+    .final {background: blue; height: 1000px;}
 }
 
 .nav {float: right; margin-top: 4%;}
@@ -63,10 +69,10 @@
 
 
 #sec h2 {width: fit-content; margin: auto; text-align: center; margin-top: 5%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
-#sec h4 {width: 50%; margin: auto; text-align: center;}
+#sec h4 {width: 90%; margin: auto; text-align: center;}
 #sec h5 {width: fit-content; margin: auto; padding: 20px; background: orange; transition: 0.9s; border-top-right-radius: 15px; border-bottom-left-radius: 15px;  border-top-left-radius: 15px; border-bottom-right-radius: 15px; margin-top: 40px;}
 #sec h5:hover {background: black; color: white; transition: 0.9s;}
 
-.final {background: rgba(10, 8, 3, 0.9); max-width: 100%;}
+.final {background: rgba(10, 8, 3, 0.9); max-width: 100%; margin: 0;}
 .final h2 {width: fit-content; margin: auto; color: rgba(252, 248, 248, 0.8); font-size: 33;}
 .final p {color: rgba(190, 183, 183, 0.8); margin-top: 40px;}
