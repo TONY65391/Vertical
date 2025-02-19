@@ -4,10 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>General Movie Page</title>
 </head>
+
+    <style>
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+        .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+    </style>
+
 <body>
     {% for x in model %}
         <h3><a href="{{x.id}}">Name: {{x.name}}</a></h3>
     {% endfor %}
-    
+    <div>
+        <h4>Emana <i class="arrow right"></i></h4>
+        <h4>Donald <i class="arrow right"></i></h4>
+        <h4>Tony <i class="arrow right"></i></h4>
+        <h4>Etima <i class="arrow right"></i></h4>
+        <h4>Harmony <i class="arrow right"></i></h4>
+        <h4>Mummy <i class="arrow right"></i></h4>
+    </div>
 </body>
 </html>
