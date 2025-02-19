@@ -17,9 +17,12 @@
     .img-gallery h5:hover {background: black; color: orange; transition: 0.9s;}
     .img-gallery h2,h4,h5 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
     #img-cont {position: relative;}
+    #img-cont img {height: 300px;}
     #img-txt {position: absolute; top: 5%; color: orange; background: rgba(19, 1, 1, 0.3); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
     #desc {position: absolute; top: 50%; background: rgba(236, 230, 230, 0.3); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-    .contents, .head {width: 95%; margin: auto;}
+    .contents, .head {width: 95%; margin: auto; padding-top: 30px;}
+    .head h4 {display: none;}
+    .nav {margin-top: 10px;}
 }
 
 @media screen and (min-width:1000px) {
@@ -48,15 +51,13 @@
     #sub-head {width: fit-content; text-align: center; margin: auto; margin-top: 40px; margin-bottom: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
     #sub-desc {width: 50%; margin: auto; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-bottom: 30px;}
     .contents, .head {width: 95%; margin: auto;}
+    .nav {display: none;}
 }
 
 @media screen and (max-width:650px) {
     #rm {display: none;}
 }
 
-@media screen and (max-width:1000px) {
-    .head h4 {display: none;}   
-}
 @media screen and (min-width:650px) {
     #rm {position: absolute; top: 70%; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; padding: 15px; background: orange; transition: 0.9s;} 
     #rm:hover {background: black; color: orange; transition: 0.9s;}  
@@ -72,3 +73,9 @@
 #jn:hover {background: black; color: orange;}
 .head h4:hover {color: orange; transition: 0.9s;}
 .head h4 {transition: 1s;}
+.nav {float: right;}
+.nav div {height: 2px; margin: 4px; background: orange; transition: 0.5s;}
+.one {width: 18px;}
+.two {width: 15px;}
+.three {width: 22px;}
+.nav:hover div {width: 25px; transition: 0.5s;}
