@@ -89,3 +89,4 @@
 .two {width: 15px;}
 .three {width: 22px;}
 .nav:hover div {width: 25px; transition: 0.5s;}
+body {background: blue;}
